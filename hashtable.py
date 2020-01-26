@@ -47,21 +47,6 @@ class HashTable:
             newnode.previous = x
 
 
-    def find(self, key):
-        index = self._hash_func(key)
-
-        node = self.buckets[index]
-
-
-        while node != None and node.key != key:
-            node = node.next
-
-        if node == None:
-            return 343
-        else:
-
-            return node.value
-
     def Delete(self ,key):
 
         index = self._hash_func(key)
@@ -119,7 +104,7 @@ class HashTable:
                     print(x.value)
                     x = x.next
 
-    def getvalue(self,key): # all fine in here
+    def find(self,key): # all fine in here
 
         index = self._hash_func(key)
         node = self.buckets[index]
@@ -129,7 +114,6 @@ class HashTable:
 
         return node.value
 
-# print check
 # ht = HashTable(10)
 # obj = HashTable(10)
 # obj.Insert('A', 5)
@@ -140,6 +124,10 @@ class HashTable:
 # obj.Insert('967sdsg', '12abs98jack')
 # print("Print1")
 # obj.print_HashTable()
+#
+#
+# print("find")
+# print(obj.find('2352'))
 
 
 
