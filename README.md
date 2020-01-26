@@ -1,6 +1,6 @@
-Hash-Table
+# Hash-Table
 
-Hash Table ADT Project Implemented in Python
+__Hash Table ADT Project Implemented in Python__
 
 
 ## Functions:
